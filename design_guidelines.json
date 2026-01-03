@@ -1,0 +1,148 @@
+{
+  "design_system": {
+    "typography": {
+      "font_family": {
+        "headings": "\"Press Start 2P\", cursive",
+        "body": "\"VT323\", monospace",
+        "code": "\"Space Mono\", monospace"
+      },
+      "scale": {
+        "h1": "text-4xl md:text-6xl leading-tight tracking-tighter",
+        "h2": "text-2xl md:text-4xl leading-tight",
+        "h3": "text-xl md:text-2xl",
+        "body": "text-lg md:text-xl leading-relaxed",
+        "small": "text-sm md:text-base"
+      },
+      "imports": [
+        "https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+      ]
+    },
+    "colors": {
+      "palette": {
+        "background": "#000000",
+        "foreground": "#FFFFFF",
+        "primary": "#00FF00",
+        "secondary": "#FF00FF",
+        "accent": "#00FFFF",
+        "muted": "#333333",
+        "border": "#FFFFFF",
+        "error": "#FF0000",
+        "warning": "#FFFF00"
+      },
+      "usage": {
+        "body_bg": "bg-black",
+        "text_main": "text-white",
+        "text_muted": "text-gray-400",
+        "border_main": "border-white",
+        "primary_action": "bg-white text-black hover:bg-gray-200",
+        "secondary_action": "bg-black text-white border-2 border-white hover:bg-white hover:text-black"
+      }
+    },
+    "visual_enhancers": {
+      "borders": {
+        "default": "border-2 border-white",
+        "thick": "border-4 border-white",
+        "radius": "rounded-none"
+      },
+      "shadows": {
+        "hard": "shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]",
+        "hard_hover": "hover:shadow-[6px_6px_0px_0px_rgba(255,255,255,1)] hover:translate-x-[-2px] hover:translate-y-[-2px]"
+      },
+      "effects": {
+        "crt_overlay": "pointer-events-none fixed inset-0 z-50 bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.25)_50%),linear-gradient(90deg,rgba(255,0,0,0.06),rgba(0,255,0,0.02),rgba(0,0,255,0.06))] bg-[length:100%_2px,3px_100%] pointer-events-none",
+        "scanline": "animate-scanline",
+        "glitch": "hover:animate-glitch"
+      }
+    },
+    "layout": {
+      "grid_system": "grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8",
+      "spacing": {
+        "section_padding": "py-12 md:py-24",
+        "container_padding": "px-4 md:px-8"
+      },
+      "containers": {
+        "card": "bg-black border-2 border-white p-6 relative",
+        "hero": "min-h-[80vh] flex flex-col justify-center items-center text-center relative overflow-hidden"
+      }
+    },
+    "components": {
+      "buttons": {
+        "primary": "font-['Press_Start_2P'] text-xs md:text-sm px-6 py-4 bg-white text-black border-2 border-white hover:bg-black hover:text-white transition-all duration-0 shadow-[4px_4px_0px_0px_#333]",
+        "secondary": "font-['Press_Start_2P'] text-xs md:text-sm px-6 py-4 bg-black text-white border-2 border-white hover:bg-white hover:text-black transition-all duration-0 shadow-[4px_4px_0px_0px_#fff]"
+      },
+      "inputs": {
+        "default": "bg-black border-2 border-white text-white font-['VT323'] text-xl p-4 placeholder:text-gray-600 focus:outline-none focus:ring-2 focus:ring-primary rounded-none"
+      },
+      "cards": {
+        "feature": "bg-black border-2 border-white p-6 hover:border-primary transition-colors duration-0 group"
+      }
+    },
+    "motion": {
+      "type": "stepped",
+      "transition": "transition-all duration-0",
+      "animations": {
+        "blink": "animate-pulse",
+        "float": "animate-bounce"
+      }
+    }
+  },
+  "assets": {
+    "images": {
+      "logo": {
+        "url": "https://images.unsplash.com/photo-1748879117589-0250bbe34916?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHw0fHxwaXhlbCUyMGFydCUyMHQtcmV4JTIwZGlub3NhdXJ8ZW58MHx8fHwxNzY3NDUzNTM3fDA&ixlib=rb-4.1.0&q=85",
+        "alt": "Pixel Coders T-Rex Logo",
+        "category": "branding"
+      },
+      "hero_bg": {
+        "url": "https://images.unsplash.com/photo-1663770114127-4f61cb62b56d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwyfHxwaXhlbCUyMGFydCUyMHJldHJvJTIwY29tcHV0ZXIlMjBjb2Rpbmd8ZW58MHx8fHwxNzY3NDUzNTM5fDA&ixlib=rb-4.1.0&q=85",
+        "alt": "Retro Computer Background",
+        "category": "hero"
+      },
+      "avatar_placeholder": {
+        "url": "https://images.unsplash.com/photo-1653723367970-ae966c1b803e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwzfHxwaXhlbCUyMGFydCUyMGF2YXRhciUyMGNoYXJhY3RlcnxlbnwwfHx8fDE3Njc0NTM1NDN8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Pixel Avatar",
+        "category": "user"
+      },
+      "trophy": {
+        "url": "https://images.unsplash.com/photo-1632679090212-612ac1f4d76f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwzfHxwaXhlbCUyMGFydCUyMHRyb3BoeSUyMGFjaGlldmVtZW50JTIwYmFkZ2V8ZW58MHx8fHwxNzY3NDUzNTQxfDA&ixlib=rb-4.1.0&q=85",
+        "alt": "Achievement Trophy",
+        "category": "gamification"
+      }
+    },
+    "icons": {
+      "library": "lucide-react",
+      "style": "stroke-width: 2px; shape-rendering: crisp-edges;"
+    }
+  },
+  "tech_stack": {
+    "frontend": "React + Tailwind CSS",
+    "backend": "FastAPI",
+    "database": "MongoDB",
+    "libraries": [
+      "reactflow",
+      "@monaco-editor/react",
+      "framer-motion",
+      "lucide-react",
+      "sonner"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "1. THEME SETUP: Add the Google Fonts imports to the <head> of index.html immediately.",
+    "2. GLOBAL CSS: Apply 'bg-black text-white font-vt323' to the body in index.css. Add the CRT overlay CSS class.",
+    "3. COMPONENTS: Do NOT use rounded corners (rounded-lg, rounded-md). Override Shadcn defaults to 'rounded-none'.",
+    "4. SHADOWS: Use hard shadows (box-shadow: 4px 4px 0px 0px #fff) instead of soft blurs.",
+    "5. ROADMAPS: Use React Flow with custom nodes that look like pixel art boxes.",
+    "6. EDITOR: Initialize Monaco Editor with a dark theme (vs-dark) and a pixel-like font if possible.",
+    "7. AUTH: Ensure both Google OAuth and Email/Password forms follow the pixel aesthetic.",
+    "8. IMAGES: Use the provided image URLs. If an image fails, fallback to a placeholder but maintain the layout.",
+    "9. ANIMATIONS: Use 'step-end' easing for animations to mimic 8-bit movement.",
+    "10. TESTING: Add data-testid to all interactive elements."
+  ],
+  "universal_guidelines": [
+    "Avoid gradients unless they are harsh/dithering patterns.",
+    "Do not use 'Inter' font.",
+    "Ensure high contrast (WCAG AA/AAA) - Black/White is safe.",
+    "Use 'sonner' for toasts with custom styling (black bg, white border).",
+    "Create a 'design_system' folder if needed to store reusable pixel components."
+  ]
+}
